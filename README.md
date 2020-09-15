@@ -1,14 +1,18 @@
 # Using
-1. Firstly create new virtual environment
+1. Firstly, create new folder and clone repository
+> git clone https://github.com/vovaklh/2018-Data-Science-Bowl.git
 
-2. Secondly install need libraries
+2. Secondly, create new virtual environment
+
+3. Install need libraries
 > pip install -r requirements.txt
-3. To train model open terminal and run the follwing code
+
+4. To train model open terminal and run the follwing code
 > python train.py -- index (name_of_model) --height (input_height) --width (input_height) 
 
 You also can select path to train data (if you use new train or test data, **remove numpy arrays**), size of batch and number of epochs, loss function and use residual blocks or not.
 
-4. To make predictions open terminal and run the following code
+5. To make predictions open terminal and run the following code
 > python predict.py --test (path_to_test) --height (height_to_resize) --width (width_to_resize) --model (path_to_model).
 
 If we using ****new test data or masks**, remove numpy arrays. You also can select the name of saved predictions, threshold value and run run length encoding or not
